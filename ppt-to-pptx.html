@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PPT to PPTX</title>
+</head>
+<body>
+
+
+
+
+2018-12-14，系统Windows10，试验成功，暂未发现转换出来的文件有错误。 <br/>
+
+注意，目标文件夹里的文件不能是打开状态，否则会出现“路径/文件访问错误 允许时错误75”。 <br/>
+
+随便打开一个PPT或PPTX文件，然后按ALT+F11，添加模块，复制一下VBA代码进去，然后运行。在弹出框内输入目标文件夹（打开目标文件夹然后点击上面的路径然后复制粘贴），然后确定，就可以了。 <br/>
+
+<pre class="prettyprint"> <code>
+Sub BatchPPTToPPTX()
+' Opens each PPT in the target folder and saves as PPTX format
+
+    Dim sFolder As String
+    Dim sPresentationName As String
+    Dim oPresentation As Presentation
+
+    ' Get the foldername:
+
+    sFolder = InputBox("Path to the folder containing PPT files to process", "Folder")
+
+    If sFolder = "" Then
+        Exit Sub
+    End If
+
+    ' Make sure the folder name has a trailing backslash
+    If Right$(sFolder, 1) <> "\" Then
+        sFolder = sFolder & "\"
+    End If
+
+    ' Are there PPT files there?
+    If Len(Dir$(sFolder & "*.PPT")) = 0 Then
+        MsgBox "Bad folder name or no PPT files in folder."
+        Exit Sub
+    End If
+
+    ' Open and save the presentations
+    sPresentationName = Dir$(sFolder & "*.PPT")
+    While sPresentationName <> ""
+        Set oPresentation = Presentations.Open(sFolder & sPresentationName, , , False)
+        Call oPresentation.SaveAs(sFolder & sPresentationName & "x", ppSaveAsDefault)
+        oPresentation.Close
+        sPresentationName = Dir$()
+    Wend
+
+    MsgBox "DONE"
+
+End Sub
+</code> </pre>
+
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+
+
+
+</body>
+</html>
