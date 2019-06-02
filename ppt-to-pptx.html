@@ -3,8 +3,11 @@
 <head>
     <title>PPT to PPTX</title>
     <link href="./styles/basic.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/solarized-dark.min.css">
 </head>
 <body>
+
+
 
 
 
@@ -23,8 +26,8 @@
   <li>无法支持中文路径</li>
 </ul>
 
-<pre class="prettyprint"><code>Sub BatchPPTToPPTX()
-' Opens each PPT in the target folder and saves as PPTX format
+<pre><code class="vb">Sub BatchPPTToPPTX()
+'Opens each PPT in the target folder and saves as PPTX format
 
     Dim folder As String
     Dim ppt_name As String
@@ -63,10 +66,10 @@ End Sub
 </code></pre>
 
 
-<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>
