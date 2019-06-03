@@ -2,8 +2,8 @@
 
 # Some Notes
 
-<a href="./pages/ppt-to-pptx.html"> Convert PPT files to PPTX files in batch </a>
+[Convert PPT files to PPTX files in batch](./pages/ppt-to-pptx.html)
 
 [Some notes from my practice of Docker](./pages/docker-notes.md)
 
-# <a href="./pages/some-good-articles-tutorials.html"> Some Good Articles and Tutorials </a>
+# [Some Good Articles and Tutorials](./pages/some-good-articles-tutorials.html)
