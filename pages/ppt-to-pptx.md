@@ -1,33 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>PPT to PPTX</title>
-    <link href="./styles/basic.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/solarized-dark.min.css">
-</head>
-<body>
-
-
-
-
-
 
 时间 2018-12-14，系统 Windows 10，测试成功，未发现转换出来的文件有错误。 <br/>
 
 
-<h3>使用方法</h3>
+### 使用方法
 随便打开一个PPTX文件，然后按[ALT]+[F11]，添加模块，复制粘贴以下VBA代码进去，然后运行。在弹出框内输入目标文件夹
 （打开目标文件夹然后点击上面的路径然后复制粘贴），然后确定。 <br/>
 
-<h3>注意事项</h3>
-<ul>
-  <li>前面打开的PPTX文件不要与需要转换的文件处于同一文件夹内</li>
-  <li>目标文件夹里的文件不能是打开状态，否则会出现“路径/文件访问错误 允许时错误75”。</li>
-  <li>无法支持中文路径</li>
-</ul>
+### 注意事项
+1. 前面打开的PPTX文件不要与需要转换的文件处于同一文件夹内
+2. 目标文件夹里的文件不能是打开状态，否则会出现“路径/文件访问错误 允许时错误75”。
+3. 无法支持中文路径
 
-<pre><code class="vb">Sub BatchPPTToPPTX()
-'Opens each PPT in the target folder and saves as PPTX format
+### VBA
+```
+Sub BatchPPTToPPTX()
+' Opens each PPT in the target folder and saves as PPTX format
 
     Dim folder As String
     Dim ppt_name As String
@@ -63,13 +50,4 @@
     MsgBox "DONE"
 
 End Sub
-</code></pre>
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-</body>
-</html>
+```
