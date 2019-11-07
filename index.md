@@ -1,23 +1,25 @@
 # Hello, World! <br/>This is *Linjian Li*.
 
-# Some Notes
+## Some Notes
 
-[Convert PPT files to PPTX files in batch](./pages/ppt-to-pptx.html)
+[Convert PPT files to PPTX files in batch](./pages/ppt_to_pptx.html)
 
-[Notes about command line interface](./pages/cli-notes.md)
+[Notes about command line interface](./pages/cli_notes.md)
 
-[Notes from my practice of Docker](./pages/docker-notes.md)
+[Notes from my practice of Docker](./pages/docker_notes.md)
 
-[Change Jupyter notebook style](change-jupyter-notebook-style.md)
+[Change Jupyter notebook style](./pages/change_jupyter_notebook_style.md)
 
-[CUDA environment](CUDA-env.md)
+[CUDA environment](./pages/CUDA_env.md)
 
-[Linux environment setup](linux-env-setup.md)
+[Linux environment setup](./pages/linux_env_setup.md)
 
-[pandas read_csv](pandas_read_csv.md)
+[pandas read_csv](./pages/pandas_read_csv.md)
 
-[Notes about Python](python-notes.md)
+[Notes about Python](./pages/python_notes.md)
 
-[Export stored WiFi information on Windows 10](windows-show-wifi.md)
+[Export stored WiFi information on Windows 10](./pages/windows_show_wifi.md)
 
-# [Some Good Articles and Tutorials](./pages/some-good-articles-tutorials.md)
+[变量取值组合与计数编号](./pages/combination_and_count.md)
+
+## [Some Good Articles and Tutorials](./pages/some_good_articles_tutorials.md)

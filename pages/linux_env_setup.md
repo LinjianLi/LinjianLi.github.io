@@ -13,7 +13,7 @@ sudo apt-get install -y htop
 sudo apt-get install -y curl
 sudo apt-get install -y wget
 sudo apt install python3-dev python3-pip
-sudo pip3 install -U virtualenv  # system-wide install
+sudo pip3 install --upgrade virtualenv
 ```
 
 ## 安装基于Python 3.6的Anaconda3
@@ -28,7 +28,9 @@ bash Anaconda3-5.2.0-Linux-x86_64.sh
 # VS code自己决定是否yes
 # 增加到环境变量要yes
 ```
+
 在国内，官方源的速度比较慢，可以添加源
+
 ```shell
 # 更换清华源
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
@@ -49,32 +51,38 @@ sudo apt-get install sublime-text
 ## pip
 
 更换 pip 源，在用户个人目录下 (root 用户就在 root 目录下) 修改 `~/.pip/pip.conf` 文件 (如果没有就自己新建)，如下
+
 ```shell
 [global]
 index-url = https://mirrors.aliyun.com/pypi/simple
 extra-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 ```
-保存并退出
 
+保存并退出
 
 ## liblinear
 
 在(Unix环境)Python中使用liblinear需要先下载liblinear源码，然后解压，进入liblinear主目录，执行`make`，然后进入`python`子目录，执行`make`。然后又2种方法使得liblinear在Python环境变量中
+
 1. 拷贝`liblinear/python`的文件夹目录，将目录添加至Python解释器的path中
 2. 在命令行界面执行`export PYTHONPATH=<path_to_liblinear>/liblinear/python:$PAYTHONPATH`
-
 
 ## CUDA
 
 查看 CUDA 版本
+
 ```
 nvcc --version
 ```
+
 或
+
 ```
 /usr/local/cuda/bin/nvcc --version
 ```
+
 或
+
 ```
 cat /usr/local/cuda/version.txt
 ```
