@@ -7,6 +7,8 @@
 ```shell
 sudo apt-get update -y
 sudo apt-get upgrade -y
+sudo apt install gcc
+sudo apt install make
 sudo apt-get install gnome-tweak-tool
 sudo apt-get install -y git
 sudo apt-get install -y htop
@@ -32,7 +34,7 @@ bash Anaconda3-5.2.0-Linux-x86_64.sh
 在国内，官方源的速度比较慢，可以添加源
 
 ```shell
-# 更换清华源
+# 添加清华源
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
 conda config --set show_channel_urls yes
@@ -71,19 +73,18 @@ extra-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
 查看 CUDA 版本
 
-```
+```shell
 nvcc --version
 ```
 
 或
 
-```
+```shell
 /usr/local/cuda/bin/nvcc --version
 ```
 
 或
 
-```
+```shell
 cat /usr/local/cuda/version.txt
 ```
-
