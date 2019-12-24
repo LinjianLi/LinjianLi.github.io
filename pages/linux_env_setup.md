@@ -5,17 +5,14 @@
 ## Ubuntu 18.04
 
 ```shell
-sudo apt-get update -y
-sudo apt-get upgrade -y
-sudo apt install gcc
-sudo apt install make
-sudo apt-get install gnome-tweak-tool
-sudo apt-get install -y git
-sudo apt-get install -y htop
-sudo apt-get install -y curl
-sudo apt-get install -y wget
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install -y make cmake g++
+sudo apt install -y htop zsh git vim
 sudo apt install python3-dev python3-pip
 sudo pip3 install --upgrade virtualenv
+sudo apt install screenfetch
+sudo apt install gnome-tweak-tool
 ```
 
 ## 安装基于Python 3.6的Anaconda3
@@ -44,10 +41,10 @@ conda config --set show_channel_urls yes
 
 ```shell
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-sudo apt-get install apt-transport-https
+sudo apt install apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update
-sudo apt-get install sublime-text
+sudo apt update
+sudo apt install sublime-text
 ```
 
 ## pip
