@@ -18,6 +18,8 @@
 
 [Notes about Python](./pages/python_notes.md)
 
+[Conda on Windows Powershell](./pages/Windows_Powershell_conda.mc)
+
 [Export stored WiFi information on Windows 10](./pages/windows_show_wifi.md)
 
 [变量取值组合与计数编号](./pages/combination_and_count.md)
