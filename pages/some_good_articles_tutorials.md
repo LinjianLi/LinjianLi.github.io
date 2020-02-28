@@ -6,6 +6,8 @@
 
 ## NLP
 
+[词向量与 Embedding 究竟是怎么回事?](https://kexue.fm/archives/4122)
+
 [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
 
 [The Annotated Transformer](http://nlp.seas.harvard.edu/2018/04/03/attention.html)
