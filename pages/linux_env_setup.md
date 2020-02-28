@@ -2,25 +2,31 @@
 
 不是全部执行，只是放在这里方便复制粘贴
 
-## Ubuntu 18.04
+## 各种基础应用
 
 ```shell
-sudo apt update -y
-sudo apt upgrade -y
-sudo apt install -y make cmake g++
-sudo apt install -y htop zsh git vim
-sudo apt install python3-dev python3-pip
-sudo pip3 install --upgrade virtualenv
-sudo apt install screenfetch
-sudo apt install gnome-tweak-tool
+apt update -y
+apt upgrade -y
+apt install -y make cmake g++
+apt install -y htop zsh vim
+apt install -y git curl wget
+apt install screenfetch
+apt install gnome-tweak-tool
 ```
 
-## 安装基于Python 3.6的Anaconda3
+## Anaconda
+
+### 基于 Python 3.6 的 Anaconda3
+
+这里的命令是安装基于 Python 3.6 的。要安装最新版的话，去 Anaconda 挂网找最新版的连接，替换掉就好了。
 
 ```shell
 cd /tmp
+# Download the Anaconda Bash Script
 curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+# Verify the Data Integrity of the Installer
 sha256sum Anaconda3-5.2.0-Linux-x86_64.sh
+# Run the Anaconda Script
 bash Anaconda3-5.2.0-Linux-x86_64.sh
 # 后续安装过程会询问几个问题
 # agreement要yes
@@ -32,19 +38,19 @@ bash Anaconda3-5.2.0-Linux-x86_64.sh
 
 ```shell
 # 添加清华源
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
-conda config --set show_channel_urls yes
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+# conda config --set show_channel_urls yes
 ```
 
 ## 安装Sublime Text 3
 
 ```shell
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-sudo apt install apt-transport-https
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt update
-sudo apt install sublime-text
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
+apt install apt-transport-https
+echo "deb https://download.sublimetext.com/ apt/stable/" | tee /etc/apt/sources.list.d/sublime-text.list
+apt update
+apt install sublime-text
 ```
 
 ## pip
