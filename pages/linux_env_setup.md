@@ -14,6 +14,35 @@ apt install screenfetch
 apt install gnome-tweak-tool
 ```
 
+## 设置 Shell 为 zsh
+
+```shell
+chsh -s $(which zsh)
+```
+
+设置 zsh 的指令历史记录。打开 `~/.zshrc` 文件然后添加以下内容
+
+```shell
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory
+```
+
+然后要创建一个 `~/.zsh_history` 来存放指令历史记录
+
+```shell
+touch ~/.zsh_history
+```
+
+### 我自己的自定义 zsh
+
+```shell
+export PYTHONIOENCODING=utf-8
+alias wns="watch -n 1 nvidia-smi"
+alias cal="conda activate linjian"
+```
+
 ## Anaconda
 
 ### 基于 Python 3.6 的 Anaconda3
