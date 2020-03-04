@@ -1,5 +1,11 @@
 # Notes about Python
 
+## Print UnicodeEncodeError
+
+[python(三)：Python3—UnicodeEncodeError 'ascii' codec can't encode characters in position 0-1](https://blog.csdn.net/AckClinkz/article/details/78538462)
+
+[Python3.6 sys.stdout.encoding的输出为'ANSI_X3.4-1968'](https://blog.csdn.net/j___t/article/details/97705231)
+
 ## Encoding
 
 我在 Ubuntu 18.04 上运行 Python 程序的时候遇到过源文件的编码问题，会出现类似以下的情况
