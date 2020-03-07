@@ -4,7 +4,14 @@
 
 [The Three Golden Rules for Successful Scientific Research](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD06xx/EWD637.html)
 
-## NLP
+## AI
+
+### Coding
+
+[Tradeoff batch size vs. number of iterations to train a neural network](https://stats.stackexchange.com/questions/164876/tradeoff-batch-size-vs-number-of-iterations-to-train-a-neural-network)
+
+
+### NLP
 
 [词向量与 Embedding 究竟是怎么回事?](https://kexue.fm/archives/4122)
 
