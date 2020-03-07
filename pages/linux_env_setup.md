@@ -24,9 +24,10 @@ chsh -s $(which zsh)
 
 ```shell
 HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=100000
+SAVEHIST=100000
 setopt appendhistory
+setopt HIST_SAVE_NO_DUPS  # Don't write duplicate entries in the history file.
 ```
 
 然后要创建一个 `~/.zsh_history` 来存放指令历史记录
