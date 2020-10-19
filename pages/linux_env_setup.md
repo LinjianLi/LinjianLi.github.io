@@ -101,23 +101,3 @@ extra-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
 1. 拷贝`liblinear/python`的文件夹目录，将目录添加至Python解释器的path中
 2. 在命令行界面执行`export PYTHONPATH=<path_to_liblinear>/liblinear/python:$PAYTHONPATH`
-
-## CUDA
-
-查看 CUDA 版本
-
-```shell
-nvcc --version
-```
-
-或
-
-```shell
-/usr/local/cuda/bin/nvcc --version
-```
-
-或
-
-```shell
-cat /usr/local/cuda/version.txt
-```
