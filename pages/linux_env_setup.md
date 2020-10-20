@@ -8,7 +8,8 @@
 apt update -y
 apt upgrade -y
 apt install -y make cmake g++
-apt install -y htop zsh vim
+apt install -y htop sysstat # for monitoring the system
+apt install -y zsh vim
 apt install -y git curl wget
 apt install screenfetch
 apt install gnome-tweak-tool
@@ -36,12 +37,11 @@ setopt HIST_SAVE_NO_DUPS  # Don't write duplicate entries in the history file.
 touch ~/.zsh_history
 ```
 
-### 我自己的自定义 zsh
+### 我自定义的 zsh
 
 ```shell
 export PYTHONIOENCODING=utf-8
 alias wns="watch -n 1 nvidia-smi"
-alias cal="conda activate linjian"
 ```
 
 ## Anaconda
