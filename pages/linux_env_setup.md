@@ -10,7 +10,8 @@ apt upgrade -y
 apt install sudo
 apt install -y make cmake g++
 apt install -y htop sysstat # for monitoring the system
-apt install -y zsh vim
+apt install -y vim
+apt install -y zsh zsh-syntax-highlighting
 apt install -y git curl wget
 apt install screenfetch
 apt install gnome-tweak-tool
@@ -22,7 +23,30 @@ apt install gnome-tweak-tool
 chsh -s $(which zsh)
 ```
 
-设置 zsh 的指令历史记录。打开 `~/.zshrc` 文件然后添加以下内容
+### 设置 zsh 的语法高亮
+
+我不想用 oh-my-zsh ，因为遇到过一些奇怪的问题。
+
+```shell
+apt install zsh-syntax-highlighting
+echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+```
+
+重新刷新之后没有语法高亮，那就执行以下语句找到 `zsh-syntax-highlighting.zsh` 文件的位置
+
+```shell
+whereis zsh-syntax-highlighting.zsh
+```
+
+然后在 `.zshrc` 文件里面加上（把 `the_path_to/zsh-syntax-highlighting.zsh` 替换成之前找到的文件路径）
+
+```shell
+source the_path_to/zsh-syntax-highlighting.zsh
+```
+
+### 设置 zsh 的指令历史记录
+
+打开 `~/.zshrc` 文件然后添加以下内容
 
 ```shell
 HISTFILE=~/.zsh_history
@@ -30,19 +54,15 @@ HISTSIZE=100000
 SAVEHIST=100000
 setopt appendhistory
 setopt HIST_SAVE_NO_DUPS  # Don't write duplicate entries in the history file.
+
+export PYTHONIOENCODING=utf-8
+alias wns="watch -n 1 nvidia-smi"
 ```
 
 然后要创建一个 `~/.zsh_history` 来存放指令历史记录
 
 ```shell
 touch ~/.zsh_history
-```
-
-### 我自定义的 zsh
-
-```shell
-export PYTHONIOENCODING=utf-8
-alias wns="watch -n 1 nvidia-smi"
 ```
 
 ## Anaconda
