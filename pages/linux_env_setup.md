@@ -56,7 +56,8 @@ setopt appendhistory
 setopt HIST_SAVE_NO_DUPS  # Don't write duplicate entries in the history file.
 
 export PYTHONIOENCODING=utf-8
-alias wns="watch -n 1 nvidia-smi"
+alias wn1="watch -n 1"
+alias wn1ns="watch -n 1 nvidia-smi"
 ```
 
 然后要创建一个 `~/.zsh_history` 来存放指令历史记录
