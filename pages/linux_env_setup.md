@@ -54,6 +54,7 @@ HISTSIZE=100000
 SAVEHIST=100000
 setopt appendhistory
 setopt HIST_SAVE_NO_DUPS  # Don't write duplicate entries in the history file.
+setopt HIST_IGNORE_DUPS # Do not enter command lines into the history list if they are duplicates of the previous event.
 
 export PYTHONIOENCODING=utf-8
 alias wn1="watch -n 1"
