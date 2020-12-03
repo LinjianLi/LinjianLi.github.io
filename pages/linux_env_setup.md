@@ -13,6 +13,7 @@ apt install -y htop sysstat # for monitoring the system
 apt install -y vim
 apt install -y zsh zsh-syntax-highlighting
 apt install -y git curl wget
+apt install -y tmux
 apt install screenfetch
 apt install gnome-tweak-tool
 ```
