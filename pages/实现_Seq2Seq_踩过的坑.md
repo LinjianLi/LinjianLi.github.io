@@ -60,4 +60,4 @@ Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3
 
 ### 题外话
 
-其实有点类似 Transformer-based Seq2Seq 的输入输出错位的操作。Decoding 阶段 Transformer 的输入是 $(SOS, x_{0}, x_{1}, x_{2}, ..., x_{t})$ ，输出是 $(x_{0}, x_{1}, x_{2}, ..., x_{t + 1})$ ，相当于错了一位。只不过 Transformer 要多次进行整段的输入输出，直到达到 max length 或者遇到 $EOS$ token 。如果把 $x_{t}$ 当做 $y_{n}$ ， $x_{t + 1}$ 当做 $EOS$ ，那就和我们前面说的类似了。
+感觉有点类似 Transformer-based Seq2Seq 的输入输出错位的操作。
