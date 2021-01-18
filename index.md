@@ -24,4 +24,6 @@
 
 [变量取值组合与计数编号](./pages/combination_and_count.md)
 
+[实现 Seq2Seq 踩过的坑](./pages/实现_Seq2Seq_踩过的坑.md)
+
 ## [Some Good Articles and Tutorials](./pages/some_good_articles_tutorials.md)
