@@ -8,6 +8,7 @@
 apt update -y
 apt upgrade -y
 apt install sudo
+apt install -y openssh-server
 apt install -y make cmake g++
 apt install -y htop sysstat # for monitoring the system
 apt install -y vim
