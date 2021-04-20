@@ -19,6 +19,21 @@ apt install screenfetch
 apt install gnome-tweak-tool
 ```
 
+## Timezone
+
+查看系统当前时区
+
+```shell
+timedatectl
+```
+
+查看所有时区并设置时区
+
+```shell
+timedatectl list-timezones
+timedatectl set-timezone <your_time_zone>
+```
+
 ## 设置 Shell 为 zsh
 
 ```shell
