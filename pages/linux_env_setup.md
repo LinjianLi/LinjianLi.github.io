@@ -43,7 +43,7 @@ chsh -s $(which zsh)
 
 ### 设置 zsh 的语法高亮
 
-我不想用 oh-my-zsh ，因为遇到过一些奇怪的问题。
+我不想用 oh-my-zsh ，因为遇到过一些奇怪的问题。例如按 `tab` 键命令补全的时候 prompt 会重复，再例如输入的命令过长（超过命令行界面宽度）的时候就会突然消失。所以自己配置一些简单的东西就好了，暂时不用那么多复杂功能。
 
 ```shell
 apt install zsh-syntax-highlighting
@@ -77,6 +77,7 @@ setopt HIST_IGNORE_DUPS # Do not enter command lines into the history list if th
 export PYTHONIOENCODING=utf-8
 alias wn1="watch -n 1"
 alias wn1ns="watch -n 1 nvidia-smi"
+alias ls="ls --color=auto"
 ```
 
 然后要创建一个 `~/.zsh_history` 来存放指令历史记录
