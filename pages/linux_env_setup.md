@@ -78,6 +78,7 @@ export PYTHONIOENCODING=utf-8
 alias wn1="watch -n 1"
 alias wn1ns="watch -n 1 nvidia-smi"
 alias ls="ls --color=auto"
+alias tat="tmux attach -t"
 ```
 
 然后要创建一个 `~/.zsh_history` 来存放指令历史记录
